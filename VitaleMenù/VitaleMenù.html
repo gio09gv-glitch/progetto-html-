@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>McMenù</title>
+    <link rel="icon" type="image/x-icon" href="images.png">
+</head>
+<body>
+
+    <h1>CATALOGO GENERALE PANINI</h1>
+
+    <p><strong>Indice Generale dei prodotti</strong></p>
+
+    <table border="1">
+        <tr>
+            <th>Immagine</th>
+            <th>Nome prodotto</th>
+            <th>Prezzo Base</th>
+            <th>Personalizza Ingredienti</th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="panino menu.jpg" alt="Crispy McBacon" width="150">
+            </td>
+            <td><b>Crispy McBacon Menù</b></td>
+            <td>€ 12,99</td>
+            <td>
+                <form action="modifica_crispy.html" method="GET">
+                    <input type="hidden" name="panino" value="Crispy McBacon">
+                    <label><input type="checkbox" name="extra_formaggio" value="1.00"> Formaggio (+€1,00)</label><br>
+                    <label><input type="checkbox" name="extra_bacon" value="1.50"> Bacon (+€1,50)</label><br>
+                    <label><input type="checkbox" name="extra_salsa" value="0.80"> Salsa (+€0,80)</label><br>
+                    <input type="submit" value="Modifica">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="panino2.png" alt="McChicken" width="150">
+            </td>
+            <td><b>McChicken Menù</b></td>
+            <td>€ 12,50</td>
+            <td>
+                <form action="modifica_mcchicken.html" method="GET">
+                    <input type="hidden" name="panino" value="McChicken">
+                    <label><input type="checkbox" name="extra_formaggio" value="1.00"> Formaggio (+€1,00)</label><br>
+                    <label><input type="checkbox" name="extra_maionese" value="0.50"> Maionese (+€0,50)</label><br>
+                    <input type="submit" value="Modifica">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="McCrunchyMenu.jpg" alt="McCrunchy Menù" width="150">
+            </td>
+            <td><b>McCrunchy Menù</b></td>
+            <td>€ 12,50</td>
+            <td>
+                <form action="modifica_mccrunchy.html" method="GET">
+                    <input type="hidden" name="panino" value="McCrunchy">
+                    <label><input type="checkbox" name="extra_formaggio" value="1.00"> Formaggio (+€1,00)</label><br>
+                    <label><input type="checkbox" name="extra_bacon" value="1.50"> Bacon (+€1,50)</label><br>
+                    <input type="submit" value="Modifica">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="happymeal.jpg" alt="Happy Meal" width="150">
+            </td>
+            <td><b>Happy Meal</b></td>
+            <td>€ 5,50</td>
+            <td>
+                <form action="modifica_happymeal.html" method="GET">
+                    <input type="hidden" name="panino" value="Happy Meal">
+                    <label><input type="checkbox" name="sorpresa_extra" value="2.00"> Sorpresa Extra (+€2,00)</label><br>
+                    <input type="submit" value="Modifica">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="bigtastybacon.jpg" alt="Big Tasty Bacon" width="150">
+            </td>
+            <td>
+                <span><b>★ NOVITÀ ★</b></span><br>
+                <span><b>Big Tasty Bacon</b></span>
+            </td>
+            <td>€ 8,50</td>
+            <td>
+                <form action="modifica_bigtasty.html" method="GET">
+                    <input type="hidden" name="panino" value="Big Tasty Bacon">
+                    <label><input type="checkbox" name="extra_formaggio" value="1.00"> Formaggio (+€1,00)</label><br>
+                    <label><input type="checkbox" name="extra_bacon" value="1.50"> Bacon (+€1,50)</label><br>
+                    <label><input type="checkbox" name="extra_cipolla" value="0.50"> Cipolla (+€0,50)</label><br>
+                    <input type="submit" value="Modifica">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <p>© 2026 - Catalogo VitaleMcMenù</p>
+
+</body>
+</html>
